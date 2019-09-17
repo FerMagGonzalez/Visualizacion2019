@@ -1,9 +1,9 @@
 class Circle {
 
-  constructor(x, y) {
+  constructor(x, y, r) {
     this.posX = x;
     this.posY = y;
-    this.radio = 10;
+    this.radio = r;
     this.color = "#FF0000";
   }
 
@@ -20,7 +20,7 @@ class Circle {
     ctx.closePath();
   }
 
-  estaPresionada(x, y) {
+  estaPresionado(x, y) {
     let nx = x - this.posX;
     let ny = y - this.posY;
     let d = Math.sqrt(Math.pow(nx,2) + Math.pow(ny,2));

@@ -1,3 +1,7 @@
+body{
+  background-color: #378B2E
+}
+
 header{
   text-align: center;
   width: 1365px;
@@ -8,9 +12,9 @@ header{
 }
 
 h1{
-  color: #000000;
+  color: #6F1A1F;
 }
 
-/* canvas{
-  background-color: #000000;
-} */
+canvas{
+  background-color: #ffffff;
+}

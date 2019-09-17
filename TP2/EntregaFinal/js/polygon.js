@@ -6,8 +6,8 @@ class Polygon {
     this.contexto = ctx;
   }
 
-  agregarCirculo(x, y){
-    let actual = new Circle(x, y);
+  agregarCirculo(x, y, r){
+    let actual = new Circle(x, y, r);
     actual.dibujar(this.contexto);
     this.circulos.push(actual);
     let cant = this.circulos.length;
@@ -42,7 +42,7 @@ class Polygon {
     }
     let xc = sumX / this.circulos.length;
     let yc = sumY / this.circulos.length;
-    this.centro = new Circle(xc, yc);
+    this.centro = new Circle(xc, yc, '7');
     this.centro.dibujar(this.contexto, '#00fe0a');
   }
 
