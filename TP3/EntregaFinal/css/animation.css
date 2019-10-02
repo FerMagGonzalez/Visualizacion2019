@@ -1,0 +1,77 @@
+button{
+  margin-top: 410px
+}
+
+#paisaje{
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+#fondo{
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  background-color: #3c6ede;
+  background-image: url('../imagen/fondo.png');
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  z-index: 0;
+  /* animation: moverPiso 6s linear infinite; */
+}
+
+/* @keyframes moverPiso {
+  /* 0% {background-position: 1000px;}
+  100% {background-position: 0;}
+  100% {background-position: -1000px;}
+} */
+
+#dog{
+  position: absolute;
+  left: -190px;
+  bottom: -120px;
+  width: 547px;
+  height: 481px;
+  background:url('../imagen/Perro/Perrowalk.png');
+  transform: scale(0.3);
+  z-index: 5;
+  animation: play 1.5s steps(10) infinite;
+}
+
+@keyframes play {
+  100% {background-position: -5470px;}
+}
+
+/* #rock{
+  position: absolute;
+  right: 100px;
+  bottom: 36px;
+  width: 300px;
+  height: 155px;
+  background:url('../imagen/roca.png');
+  transform: scale(0.7);
+  animation: rock 2s;
+  z-index: 4;
+}
+
+@keyframes rock {
+  100% {background-position: -500px;}
+} */
+
+#flower{
+  position: absolute;
+  /* right: 10px; */
+  left: 80%;
+  bottom: 65px;
+  width: 200px;
+  height: 93px;
+  background: url('../imagen/flores.png');
+  z-index: -1;
+  animation: moverFlor 17s linear infinite;
+}
+
+@keyframes moverFlor {
+  0% {transform: translate(0%, 0px);}
+  100% {transform: translate(-380%, 0px);}
+}
